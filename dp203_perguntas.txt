@@ -1,0 +1,108 @@
+You need to implement encryption at rest by using transparent data encryption (TDE).
+You implement a master key.
+What should you do next?
+
+Create a certificate that is protected by the master key.
+
+---
+
+You need to add permissions to an Azure Data Lake Storage Gen2 account that allows assigning POSIX access controls.
+Which role should you use?
+
+Storage Blob Data Owner
+
+------
+
+You have an Azure Data Lake Storage Gen2 account.
+You grant developers Read and Write permissions by using ACLs to the files in the path \root\input\cleaned.
+The developers report that they cannot open the files.
+How should you modify the permissions to ensure that the developers can open the files?
+
+Add Contributor permission to the developers.
+
+-------------------------
+
+You use Azure Data Factory to connect to a notebook that runs in an Azure Databricks cluster. The connection is set to use access tokens.
+You need to revoke a user’s token.
+What should you use?
+
+Token Management API 2.0
+
+-------------------------------
+
+You need to grant an Azure Active Directory user access to write data to an Azure Data Lake Storage Gen2 account.
+Which security technology should you use to grant the access?
+
+
+RBAC
+
+----------------------------------
+
+
+You have an Azure Storage account named account1.
+You need to ensure that requests to account1 can only be made from specific domains.
+What should you configure?
+
+> CORS
+
+----------------------------------
+
+You have a pipeline in an Azure Synapse Analytics workspace. The pipeline runs a stored procedure against the dedicated SQL pool.
+The pipeline throws errors occasionally.
+You need to check the error information by using the minimum amount of administrative effort.
+What should you do?
+
+
+> From the Monitor page of Azure Synapse Studio, review the Pipeline runs tab.
+
+---------------------------------------
+
+You have an Azure Synapse Analytics workspace.
+You need to monitor wait stats that relate to the SQL Server OS state on each node of the dedicated SQL pools.
+Which view should you use?
+
+> sys.dm_pdw_wait_stats
+
+-----------------------------------------
+
+You have an Azure Data Factory named ADF1.
+You need to ensure that you can analyze pipeline runtimes for ADF1 for the last 90 days.
+What should you use?
+
+> Azure Monitor
+
+Data Factory only stores pipeline runtimes for 45 days. To view the data for a longer period, that data must be sent to Azure Monitor, where the information can then be retrieved and viewed.
+
+------------------------------------------
+
+You monitor an Apache Spark job that has been slower than usual during the last two days. The job runs a single SQL statement in which two tables are joined.
+You discover that one of the tables has significant data skew.
+You need to improve job performance.
+Which hint should you use in the query
+
+>SKEW
+
+You should use the SKEW hint in the query.
+
+The COALESCE hint reduces the number of partitions to the specified number of partitions.
+
+The REPARTITION hint is used to specify the number of partitions using the specified partitioning expressions.
+
+The REBALANCE hint can be used to rebalance the query result output partitions, so that every partition is a reasonable size (not too small and not too big).
+
+---------------------------------------------
+
+You have an Azure Databricks cluster that uses Databricks Runtime 10.1.
+You need to automatically compact small files for creating new tables, so that the target file size is appropriate to the use case.
+What should you set?
+
+>delta.autoOptimize.autoCompact = auto
+
+You should use delta.autoOptimize.autoCompact = auto because it compacts the files to the size that is appropriate to the use case.
+
+delta.autoOptimize.autoCompact = true and delta.autoOptimize.autoCompact = legacy compact the files to 128 MB.
+
+delta.autoOptimize.autoCompact = false disables automated file compaction.
+
+--------------------------------------------------
+
